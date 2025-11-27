@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gokul — Web Project</title>
+  <meta name="description" content="A clean, responsive starter site by Gokul." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#">Gokul</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a class="btn" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <h1>Build clarity. Ship fast.</h1>
+      <p>I turn complex ideas into crisp models and practical products.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#work">View my work</a>
+        <a class="btn secondary" href="#notes">Read notes</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I’m Gokul—systems thinker focused on clear models, comparative analysis, and making complex concepts intuitive.
+        I enjoy cognitive psychology and Victorian literary style, turning dense material into visuals and mental maps.
+      </p>
+      <div class="features">
+        <article>
+          <h3>Clarity-first</h3>
+          <p>Step-by-step breakdowns, diagrams, and analogies for rapid understanding.</p>
+        </article>
+        <article>
+          <h3>Practical models</h3>
+          <p>Translate theory into reusable frameworks and tools.</p>
+        </article>
+        <article>
+          <h3>Bias-aware</h3>
+          <p>Consider heuristics and cognitive biases in design and communication.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section alt">
+      <h2>Selected work</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Memory map</h3>
+          <p>Interactive model explaining encoding, storage, retrieval—with bias hooks.</p>
+          <a class="btn small" href="#" aria-disabled="true">Demo</a>
+        </article>
+        <article class="card">
+          <h3>Victorian lens</h3>
+          <p>Toolkit for analyzing narrative voice, diction, and character psychology.</p>
+          <a class="btn small" href="#" aria-disabled="true">Read</a>
+        </article>
+        <article class="card">
+          <h3>Bias catalog</h3>
+          <p>Searchable heuristics library with examples and mitigation patterns.</p>
+          <a class="btn small" href="#" aria-disabled="true">Explore</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="notes" class="section">
+      <h2>Notes</h2>
+      <ul class="notes-list">
+        <li>
+          <strong>Signal vs. noise:</strong> A simple table to separate evidence from vibes.
+        </li>
+        <li>
+          <strong>Anchoring effect:</strong> Why first numbers stick and how to counter them.
+        </li>
+        <li>
+          <strong>Style mirrors thought:</strong> Victorian cadence as cognitive scaffolding.
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section alt">
+      <h2>Contact</h2>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Gokul. Built for clarity.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
